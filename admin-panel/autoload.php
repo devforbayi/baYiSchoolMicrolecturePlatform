@@ -216,6 +216,9 @@ if ($page == 'dashboard') {
                         </a>
                         <ul class="ml-menu">
                             <li <?php echo ($page == 'manage-videos') ? 'class="active"' : ''; ?>>
+                                <a href="<?php echo PT_LoadAdminLinkSettings('manage-videos'); ?>">视频分类管理</a>
+                            </li>
+                            <li <?php echo ($page == 'manage-videos') ? 'class="active"' : ''; ?>>
                                 <a href="<?php echo PT_LoadAdminLinkSettings('manage-videos'); ?>">管理视频</a>
                             </li>
                             <li <?php echo ($page == 'import-from-youtube' || $page == 'import-from-dailymotion') ? 'class="active"' : ''; ?>>
