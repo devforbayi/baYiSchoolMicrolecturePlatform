@@ -175,8 +175,8 @@
 	</div>
 	<?php if ($pt->page != 'login') { ?>
 	<div class="yp_side_drawer">
-		<span class="open_side_menu_head">
-			<?php if ($pt->config->night_mode == 'both' || $pt->config->night_mode == 'night_default'): ?>
+		<span class="open_side_menu_head"><!--侧边菜单开关-->
+			<?php if ($pt->config->night_mode == 'both' || $pt->config->night_mode == 'night_default'): ?><!--夜间模式-->
 				<div class="toggle-mode top-header">
 					<label class="switch" title="{{LANG mode}}">
 						<input type="checkbox" {{MODE}} id="toggle-mode-side">

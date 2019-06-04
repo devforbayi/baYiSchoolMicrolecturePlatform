@@ -3,7 +3,8 @@
 		<div class="pt_featured_video">
 			<div class="home-page-categories">
 				<div class="title">
-					<h4><div style="background:#E91E63"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></div> {{LANG featured_video}}</h4>
+					<!--最新课程-->
+					<h4><div style="background:#E91E63"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></div> <!--{{LANG featured_video}}-->最新课程</h4>
 				</div>
 			</div>
 			<div class="video-player row">
@@ -20,6 +21,7 @@
 					<div class="video-title">
 						<input type="hidden" value="{{ID}}" id="video-id">
 						<div class="publisher-element">
+							<!--视频发布者信息-->
 							<div class="publisher-avatar pull-left">
 								<a href="{{USER url}}"><img src="{{USER avatar}}" alt="{{USER name}}"></a>
 							</div>
@@ -31,6 +33,7 @@
 						</div>
 						<hr>
 						<div class="video-big-title">
+							<!--视频标题-->
 							<a href="{{URL}}">{{TITLE}}</a>
 							<p>{{DESC}}</p>
 						</div>
@@ -52,7 +55,7 @@
 			<div class="home-page-categories">
 				<div class="title">
 					<h4>
-						<div style="background:#2196F3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></div> {{LANG trending}} 
+						<div style="background:#2196F3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></div> 同学在看<!--{{LANG trending}}-->
 						<span class="view_more_link"><a href="{{LINK videos/trending}}">{{LANG explore_more}}</a></span>
 					</h4>
 				</div>
