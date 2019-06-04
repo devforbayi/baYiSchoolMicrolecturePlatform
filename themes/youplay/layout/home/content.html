@@ -6,7 +6,7 @@
 					<!--最新课程-->
 					<h4><div style="background:#E91E63"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></div> <!--{{LANG featured_video}}-->最新课程</h4>
 				</div>
-			</div>
+			<</div>
 			<div class="video-player row">
 				<div class="col-md-8 no-padding-left" id="no_padding">
 					<a href="{{URL}}">
@@ -20,8 +20,8 @@
 				<div class="col-md-4 no-padding-right" id="no_padding">
 					<div class="video-title">
 						<input type="hidden" value="{{ID}}" id="video-id">
+						<!--
 						<div class="publisher-element">
-							<!--视频发布者信息-->
 							<div class="publisher-avatar pull-left">
 								<a href="{{USER url}}"><img src="{{USER avatar}}" alt="{{USER name}}"></a>
 							</div>
@@ -31,13 +31,13 @@
 							</div>
 							<div class="clear"></div>
 						</div>
-						<hr>
+						<hr>-->
+						<!--视频简介
 						<div class="video-big-title">
-							<!--视频标题-->
 							<a href="{{URL}}">{{TITLE}}</a>
 							<p>{{DESC}}</p>
 						</div>
-						<div class="clear"></div>
+						<div class="clear"></div>-->
 						<div class="video-big-share">
 							<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a><a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a><a href="#" class="bds_h163" data-cmd="h163" title="分享到网易热"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
@@ -45,18 +45,32 @@
 					</div>
 				</div>
 			</div>
+			<hr>
+			<div class="home-page-categories">
+				<div class="title">
+					<h4><div style="background:#E91E63"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></div> <!--{{LANG featured_video}}-->课程目录</h4>
+				</div>
+				<div>
+					<ul>
+						<li><button></button></li>
+						<li><button></button></li>
+						<li><button></button></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<hr class="dark_hr">
-	
+	<!--<hr class="dark_hr">-->
+
+	<!--
 	<div class="hide_trend">
 		<div class="content pt_shadow yp_trans">
 			<div class="home-page-categories">
 				<div class="title">
 					<h4>
-						<div style="background:#2196F3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></div> 同学在看<!--{{LANG trending}}-->
-						<span class="view_more_link"><a href="{{LINK videos/trending}}">{{LANG explore_more}}</a></span>
+						<div style="background:#2196F3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></div> {{LANG trending}}
+						<span class="view_more_link"><a href="{{LINK videos/trending}}">{LANG explore_more}}</a></span>
 					</h4>
 				</div>
 				<div class="videos">
@@ -66,8 +80,9 @@
 			<div class="clear"></div>
 		</div>
 		<hr class="dark_hr">
-	</div>
-		
+	</div>-->
+
+	<!--
 	<div class="hide_top">
 		<div class="content pt_shadow yp_trans">
 			<div class="home-page-categories">
@@ -84,10 +99,11 @@
 			<div class="clear"></div>
 		</div>
 		<hr class="dark_hr">
-	</div>
+	</div>-->
 
-    {{SUBSC_HTML}}
+    <!--{{SUBSC_HTML}}-->
 
+	<!--
 	<div class="content pt_shadow yp_trans">
 		<div class="home-page-categories">
 			<div class="title">
@@ -104,9 +120,10 @@
 	</div>
 	
 	<hr class="dark_hr">
-
+-->
     {{HOME_PAGE_VIDEOS}}
 </div>
+
 <script>
 $(document).ready(function() {
 if( !$.trim( $('.pt_four_videos_trend').html() ).length ) {
