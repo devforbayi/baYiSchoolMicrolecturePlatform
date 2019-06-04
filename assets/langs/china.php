@@ -1,6 +1,13 @@
-<?php 
+<?php
+
+$con = mysql_connect("localhost","root","linyheart");
+if (!$con)
+{
+    die('Could not connect: ' . mysql_error());
+}
+
 $categories = array(
-    '1' => '作业讲评',
+    '1' => '{{CATEGORIES 1}}',
     '2' => '难点释疑',
     '3' => '期末串讲',
    /* '4' => '纪实历史',

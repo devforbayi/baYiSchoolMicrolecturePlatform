@@ -18,7 +18,8 @@ $pages = array(
     'manage-payments',
     'payment-requests', 
     'manage-users', 
-    'manage-videos', 
+    'manage-videos',
+    'manage-video-classes',
     'import-from-youtube', 
     'import-from-dailymotion', 
     'manage-video-ads', 
@@ -57,7 +58,7 @@ if (in_array($page, $pages)) {
 if (empty($page_loaded)) {
     header("Location: " . PT_Link('admincp'));
     exit();
-}
+}/*判断页面是否存在，若不存在自动跳转到admincp的404界面*/
 
 if ($page == 'dashboard') {
     if ($pt->config->last_admin_collection < (time() - 1800)) {
@@ -209,14 +210,14 @@ if ($page == 'dashboard') {
                         </ul>
                         
                     </li>
-                    <li <?php echo ($page == 'manage-videos' || $page == 'import-from-youtube' || $page == 'import-from-dailymotion') ? 'class="active"' : ''; ?>>
+                    <li <?php echo ($page == 'manage-videos' || $page == 'manage-video-classes' || $page == 'import-from-youtube' || $page == 'import-from-dailymotion') ? 'class="active"' : ''; ?>>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">video_library</i>
                             <span>视频</span>
                         </a>
                         <ul class="ml-menu">
-                            <li <?php echo ($page == 'manage-videos') ? 'class="active"' : ''; ?>>
-                                <a href="<?php echo PT_LoadAdminLinkSettings('manage-videos'); ?>">视频分类管理</a>
+                            <li <?php echo ($page == 'manage-video-classes') ? 'class="active"' : ''; ?>> <!--视频分类管理面板-->
+                                <a href="<?php echo PT_LoadAdminLinkSettings('manage-video-classes'); ?>">视频分类管理</a>
                             </li>
                             <li <?php echo ($page == 'manage-videos') ? 'class="active"' : ''; ?>>
                                 <a href="<?php echo PT_LoadAdminLinkSettings('manage-videos'); ?>">管理视频</a>
