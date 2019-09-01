@@ -203,7 +203,8 @@ $(function () {
       else{
          var filename = $('.upload').val().split('\\').pop();
          $('#upload-form').removeClass('hidden');
-		 <?php if ($pt->user->admin == 1) { ?>$('.upload_msg').addClass('hidden');<?php } ?>
+		 // <?php if ($pt->user->admin == 1) { ?>$('.upload_msg').addClass('hidden');<?php } ?>
+		 if ($pt->user->admin == 1) { $('.upload_msg').addClass('hidden'); }
          $('.upload').addClass('hidden');
       }
    });
